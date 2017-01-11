@@ -1,3 +1,3 @@
-﻿# chocolatey-winlogbeat5
+﻿# chocolatey-winlogbeat
 
-Contains the chocolatey package for winlogbeat 5
+Contains the chocolatey package for winlogbeat
