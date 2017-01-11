@@ -14,14 +14,15 @@ branches:
 environment:
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
   au_version:
-  au_push: true
+  au_push: false
   # Force test: use 1 to test all, or N to split testing into N groups
   au_test_groups: 1
 
   # Github token to commit pushed packages to repository
-  github_user_repo: {github_user}/{repository}
+  github_user_repo: palethorper/chocolatey-packages
   github_api_key:
-    secure: YOUR_GITHUB_API_KEY_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: J6Q3aUEw6+1Su/KOme3vVSv0VQUl5dhUhbAdTd883dc8jwxUgDormi/1Yz96HhzCr5L4pejF/C1H6wl9RVG8N5mNV1p004nCVRCMq64GqvuglBIEGGie3nyJokCcai34HWM31FlPdZ+Y/U4dCvGyy1NN8vWLw6mWpIlcoG770S9OVAqQx8yaeaqKOBVPZbiFfgZOkwwfxlf3Xt3u0MBnyYUsAqtdeGPLgFOGqGYMgIdq2kp7IjgzVyFmxehAgokJieB00eVZAoGbJtEQpyO+X65vQVSndQ99b7RKXthrYq0HJTWWDuNy9HBt05OCwUxlVM41QHGsGvV3u+1AAu7ckiymCQiXtqyzE2NDOfF4ejKi/7STftvV2TUWj+YGWDSsL13RtlWWETcvNujUVJ/CbKLhS/07RhVtfUr9PALAW10y9AYAqG34XAoZkEVmixR1px0Vra3SY4U36B2M7ns82HCxxtSS2XTV6ASZKCU0q662vi+1o1L4FYI+zz9XTwrBVqWBvz90HpB1DDVHfBVi3pzUiBZSIpiChG08pvuIw/cWns5o6vB7SLZ8TuSIQ38ssa3HPSWZ4My4A64UIsla01KQ/BvjHRRFLOAXc/WK1ow8uwT19IH5nfDifnr90zlDhZsK1tytfD8FR5RmGTWI8eeyttqkA5d2jb6QdD+kbLGkps0Lr2CQuFcXqxDCWkxIqBJBNCAv/p3v+r5K/ouQneq9newCnGIs4H0wJ37ALIhqMKb8lL/Zug4WL8eMaL008y+WHFxfYAkNG90EqIy6A/BVELYHW/0Ufb8giz/SgA7giwQW/AgdP6muewTKoU49GPgC3WxO+Kz19QGyn5FBYmKxKuctYwha6LvYcMnFLhGyqEM1phlGcyK+aHpcZewxZi3pEZ0Us9CRJjPCcI+/9BXGByn2iu+E0mw1yTe6CAct1GLUELcC+Xx1bnyNlo3yRLSiftAEjqd3+M6KYPVvWFVPwAk4BPmaSOYoKt9rRgc=
+ #https://ci.appveyor.com/tools/encrypt
 
 
   # Mail credentials - for error notifications
@@ -42,7 +43,7 @@ environment:
 
   # Chocolatey API key - to push updated packages
   api_key:
-    secure: YOUR_CHOCO_API_KEY_HERE_ENCRYPTED_STRING # https://ci.appveyor.com/tools/encrypt
+    secure: lwj+sFBfqXcPTIyVHyXdxIt2otWJcmnD9tmXrX/SZd/d+uVfH55aG61a50bQwd8a # https://ci.appveyor.com/tools/encrypt
 
 init:
 - git config --global user.email "chocolatey@realdimensions.net"

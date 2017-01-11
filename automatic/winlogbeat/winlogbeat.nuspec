@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>winlogbeat</id>
+    <version>5.1.1</version> 
+    <packageSourceUrl>https://github.com/palethorper/chocolatey-winlogbeat/tree/5.0</packageSourceUrl>
+    <owners>palethorper</owners>
+    <title>winlogbeat</title>
+    <authors>Robert Palethorpe</authors>
+    <projectUrl>https://www.elastic.co/downloads/beats/winlogbeat</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/palethorper/chocolatey-winlogbeat/master/icons/winlogbeat.png</iconUrl>
+    <copyright></copyright>
+    <!-- If there is a license Url available, it is is required for the community feed -->
+    <licenseUrl>https://cdn.rawgit.com/elastic/beats/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/elastic/beats/tree/5.1/winlogbeat</projectSourceUrl>
+    <docsUrl>https://www.elastic.co/guide/en/beats/winlogbeat/5.1/index.html</docsUrl>
+    <tags>winlogbeat beat admin</tags>
+    <summary>Winlogbeat is a lightweight, open source shipper for Windows Event logs.</summary>
+    <description>
+Collect Windows Event Logs
+
+Harness the richness of system, application, and security information from Windows event logs using a lightweight Winlogbeat data collector. Ship events directly to Elasticsearch or parse and enrich them using Logstash prior to visualizing results in Kibana.
+</description>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
