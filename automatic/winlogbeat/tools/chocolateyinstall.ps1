@@ -1,11 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName= 'winlogbeat'
-$packageVersion = "5.1.1"
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = "https://artifacts.elastic.co/downloads/beats/$($packageName)/$($packageName)-$($packageVersion)-windows-x86.zip"
-$url64      = "https://artifacts.elastic.co/downloads/beats/$($packageName)/$($packageName)-$($packageVersion)-windows-x86_64.zip"
+$url        = "https://artifacts.elastic.co/downloads/beats/$($packageName)/$($packageName)-{{PackageVersion}}-windows-x86.zip"
+$url64      = "https://artifacts.elastic.co/downloads/beats/$($packageName)/$($packageName)-{{PackageVersion}}-windows-x86_64.zip"
 
 $installationPath = $toolsDir
 
