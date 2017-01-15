@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>metricbeat</id>
+    <version>5.1.1</version> 
+    <packageSourceUrl>https://github.com/palethorper/chocolatey-packages/tree/master/automatic/metricbeat</packageSourceUrl>
+    <owners>palethorper</owners>
+    <title>metricbeat</title>
+    <authors>Robert Palethorpe</authors>
+    <projectUrl>https://www.elastic.co/downloads/beats/metricbeat</projectUrl>
+    <iconUrl>https://github.com/palethorper/chocolatey-packages/automatic/metricbeat/icons/packetbeat.png</iconUrl>
+    <copyright></copyright>
+    <!-- If there is a license Url available, it is is required for the community feed -->
+    <licenseUrl>https://github.com/palethorper/chocolatey-packages/automatic/metricbeat/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/elastic/beats/tree/5.1/metricbeat</projectSourceUrl>
+    <docsUrl>https://www.elastic.co/guide/en/beats/metricbeat/5.1/index.html</docsUrl>
+    <tags>metricbeat beat elastic admin</tags>
+    <summary>Metricbeat helps you monitor your servers and the services they host by collecting metrics from the operating system and services.</summary>
+    <description>
+Metricbeat is a lightweight shipper that you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
+</description>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
