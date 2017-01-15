@@ -1,5 +1,12 @@
 # Chocolatey Packages
 
+## Notes
+
+* Install manually on local
+	* choco.exe install --allow-downgrade -fdvy [pkg.nupkg] 
+* Uninstall manually on local
+	* choco.exe uninstall [pkg.nupkg]
+
 ~~~
 <!-- EDIT ME-->
 
