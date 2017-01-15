@@ -8,10 +8,10 @@
     <title>winlogbeat</title>
     <authors>Robert Palethorpe</authors>
     <projectUrl>https://www.elastic.co/downloads/beats/winlogbeat</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/0cb2759a/automatic/winlogbeat/icons/winlogbeat.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/624898d9/automatic/winlogbeat/icons/winlogbeat.png</iconUrl>
     <copyright></copyright>
     <!-- If there is a license Url available, it is is required for the community feed -->
-    <licenseUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/0cb2759a/automatic/winlogbeat/LICENSE</licenseUrl>
+    <licenseUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/624898d9/automatic/winlogbeat/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/elastic/beats/tree/5.1/winlogbeat</projectSourceUrl>
     <docsUrl>https://www.elastic.co/guide/en/beats/winlogbeat/5.1/index.html</docsUrl>
