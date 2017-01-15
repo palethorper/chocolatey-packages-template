@@ -8,10 +8,10 @@
     <title>metricbeat</title>
     <authors>Robert Palethorpe</authors>
     <projectUrl>https://www.elastic.co/downloads/beats/metricbeat</projectUrl>
-    <iconUrl>https://github.com/palethorper/chocolatey-packages/automatic/metricbeat/icons/packetbeat.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/53430a5c/automatic/metricbeat/icons/metricbeat.png</iconUrl>
     <copyright></copyright>
     <!-- If there is a license Url available, it is is required for the community feed -->
-    <licenseUrl>https://github.com/palethorper/chocolatey-packages/automatic/metricbeat/LICENSE</licenseUrl>
+    <licenseUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/53430a5c/automatic/metricbeat/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/elastic/beats/tree/5.1/metricbeat</projectSourceUrl>
     <docsUrl>https://www.elastic.co/guide/en/beats/metricbeat/5.1/index.html</docsUrl>
