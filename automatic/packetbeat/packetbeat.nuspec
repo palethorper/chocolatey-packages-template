@@ -7,7 +7,7 @@
     <owners>palethorper</owners>
     <title>packetbeat</title>
     <authors>Robert Palethorpe</authors>
-    <projectUrl>https://www.elastic.co/downloads/beats/winlogbeat</projectUrl>
+    <projectUrl>https://www.elastic.co/downloads/beats/packetbeat</projectUrl>
     <iconUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/624898d9/automatic/packetbeat/icons/packetbeat.png</iconUrl>
     <copyright></copyright>
     <!-- If there is a license Url available, it is is required for the community feed -->
