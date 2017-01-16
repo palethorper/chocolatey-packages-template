@@ -8,10 +8,10 @@
     <title>filebeat</title>
     <authors>Robert Palethorpe, William Tsoi</authors>
     <projectUrl>https://www.elastic.co/downloads/beats/filebeat</projectUrl>
-    <iconUrl>https://github.com/palethorper/chocolatey-packages/automatic/filebeat/icons/filelogbeat.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/automatic/filebeat/icons/filelogbeat.png</iconUrl>
     <copyright></copyright>
     <!-- If there is a license Url available, it is is required for the community feed -->
-    <licenseUrl>https://github.com/palethorper/chocolatey-packages/automatic/filebeat/LICENSE</licenseUrl>
+    <licenseUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/automatic/filebeat/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/elastic/beats/tree/5.1/filebeat</projectSourceUrl>
     <docsUrl>https://www.elastic.co/guide/en/beats/filebeat/5.1/index.html</docsUrl>
