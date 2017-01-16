@@ -1,16 +1,21 @@
 import-module au
 
 $url = 'https://www.elastic.co/downloads/beats/winlogbeat'
+$packageName = 'winlogbeat'
 
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
+            "(^\s*[$]packageName\s*=\s*)(['""].*['""])"      = "`$1'$($packageName)'"
             "(^\s*[$]url64\s*=\s*)(['""].*['""])"      = "`$1'$($Latest.URL64)'"
             "(^\s*[$]url\s*=\s*)(['""].*['""])"      = "`$1'$($Latest.URL32)'"
             "(^\s*[$]*checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
             "(^\s*[$]*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
             "(^\s*[$]*checksumType\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32Type)'"
             "(^\s*[$]*checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64Type)'"
+        };
+        'tools\chocolateyUnInstall.ps1' = @{
+            "(^\s*[$]packageName\s*=\s*)(['""].*['""])"      = "`$1'$($packageName)'"
         }
      }
 }

@@ -1,4 +1,4 @@
-﻿$packageName= 'winlogbeat'
+﻿$packageName= 'packetbeat'
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $nupkgFile = Get-Content $(Join-Path $toolsDir "..\*.nupkg")

@@ -13,6 +13,9 @@ function global:au_SearchReplace {
             "(^\s*[$]*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
             "(^\s*[$]*checksumType\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32Type)'"
             "(^\s*[$]*checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64Type)'"
+        };
+        'tools\chocolateyUnInstall.ps1' = @{
+            "(^\s*[$]packageName\s*=\s*)(['""].*['""])"      = "`$1'$($packageName)'"
         }
      }
 }
