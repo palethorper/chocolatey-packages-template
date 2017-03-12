@@ -21,7 +21,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $url
+    $download_page = Invoke-WebRequest -Uri $url -UseBasicParsing -DisableKeepAlive
 
     $reVersion  = ">(\d+.\d+.\d+)<"
     $download_page.Content -imatch $reVersion
@@ -34,12 +34,12 @@ function global:au_GetLatest {
 
     $x = ($links | ? { $_.href -imatch "x86.zip" -and $_.href -match "zip\.(\w+)$" }).href
     $checksum32Type = $Matches[1]
-    $checkSum32 = (Invoke-WebRequest ($x))
+    $checkSum32 = (Invoke-WebRequest ($x) -UseBasicParsing -DisableKeepAlive)
     $checkSum32 = [System.Text.Encoding]::Default.GetString($checkSum32.Content)
 
     $x = ($links | ? { $_.href -imatch "x86_64.zip" -and $_.href -match "zip\.(\w+)$" }).href
     $checksum64Type = $Matches[1]
-    $checkSum64 = (Invoke-WebRequest ($x))
+    $checkSum64 = (Invoke-WebRequest ($x) -UseBasicParsing -DisableKeepAlive)
     $checkSum64 = [System.Text.Encoding]::Default.GetString($checkSum64.Content)
 
     $Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version; Checksum32 = $checkSum32; Checksum32Type = $checksum32Type; Checksum64 = $checkSum64; Checksum64Type = $checksum64Type; }
