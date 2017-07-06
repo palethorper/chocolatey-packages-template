@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>packetbeat</id>
-    <version>5.4.0</version> 
+    <version>5.4.3</version> 
     <packageSourceUrl>https://github.com/palethorper/chocolatey-packages/tree/master/automatic/packetbeat</packageSourceUrl>
     <owners>palethorper</owners>
     <title>packetbeat</title>
