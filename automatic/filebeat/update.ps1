@@ -27,7 +27,7 @@ function global:au_GetLatest {
     $download_page.Content -imatch $reVersion
     $version = $Matches[1]
 
-    $links = $download_page.Links | ? { $_.href -imatch "zip" }
+    $links = $download_page.Links | ? { $_.href -imatch "zip" -and $_.href -notmatch "alpha" }
 
     $url32 = ($links | ? { $_.href -imatch "x86.zip$" }).href
     $url64 = ($links | ? { $_.href -imatch "x86_64.zip$" }).href
