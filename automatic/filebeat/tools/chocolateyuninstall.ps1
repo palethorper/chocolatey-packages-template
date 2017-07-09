@@ -1,7 +1,7 @@
 ﻿$packageName= 'filebeat'
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$nupkgFile = Get-Content $(Join-Path $toolsDir "..\*.nupkg")
+$nupkgFile = (Get-Item $(Join-Path $toolsDir "..\*.nupkg")).FullName
 $zipManifest = Get-Content $(Join-Path $toolsDir "..\*.zip.txt")
 $installPath = $zipManifest | select -First 1
 
