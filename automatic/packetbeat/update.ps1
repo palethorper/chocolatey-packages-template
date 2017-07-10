@@ -16,7 +16,11 @@ function global:au_SearchReplace {
         };
         'tools\chocolateyUnInstall.ps1' = @{
             "(^\s*[$]packageName\s*=\s*)(['""].*['""])"      = "`$1'$($packageName)'"
-        }
+        };
+        "$($packageName).nuspec" = @{
+            "(<projectSourceUrl.*?)(\d+\.\d+)(.*?projectSourceUrl>)"    = "`${1}$([regex]::match($Latest.Version, "\d+\.\d+").Value)`${3}"
+            "(<docsUrl.*?)(\d+\.\d+)(.*?docsUrl>)"    = "`${1}$([regex]::match($Latest.Version, "\d+\.\d+").Value)`${3}"
+        };
      }
 }
 
