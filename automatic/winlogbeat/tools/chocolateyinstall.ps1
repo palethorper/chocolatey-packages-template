@@ -3,8 +3,8 @@
 $packageName= 'winlogbeat'
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-5.4.0-windows-x86.zip'
-$url64      = 'https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-5.4.0-windows-x86_64.zip'
+$url        = 'https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-5.5.1-windows-x86.zip'
+$url64      = 'https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-5.5.1-windows-x86_64.zip'
 
 $installationPath = $toolsDir
 
@@ -13,9 +13,9 @@ $packageArgs = @{
   unzipLocation = $installationPath
   url           = $url
   url64bit      = $url64
-  checksum      = '555de2dc3d7391980340bbd5e8040cd857598b8a'
+  checksum      = 'c0b9ea66d0562bb91b5720b91ff741cabd226f26'
   checksumType  = 'sha1'
-  checksum64    = '450a7a0d2704370239d0c282f697699d4820bf66'
+  checksum64    = '8d2336ed5393a99064961f25a0e70e4180b60865'
   checksumType64= 'sha1'
 }
 

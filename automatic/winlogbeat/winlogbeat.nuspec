@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>winlogbeat</id>
-    <version>5.4.0</version> 
+    <version>5.5.1</version> 
     <packageSourceUrl>https://github.com/palethorper/chocolatey-packages/tree/master/automatic/winlogbeat</packageSourceUrl>
     <owners>palethorper</owners>
     <title>winlogbeat</title>
@@ -13,8 +13,8 @@
     <!-- If there is a license Url available, it is is required for the community feed -->
     <licenseUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/624898d9/automatic/winlogbeat/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/elastic/beats/tree/5.1/winlogbeat</projectSourceUrl>
-    <docsUrl>https://www.elastic.co/guide/en/beats/winlogbeat/5.1/index.html</docsUrl>
+    <projectSourceUrl>https://github.com/elastic/beats/tree/5.5/winlogbeat</projectSourceUrl>
+    <docsUrl>https://www.elastic.co/guide/en/beats/winlogbeat/5.5/index.html</docsUrl>
     <tags>winlogbeat beat elastic admin</tags>
     <summary>Winlogbeat is a lightweight, open source shipper for real-time network packet analyzer</summary>
     <description>
