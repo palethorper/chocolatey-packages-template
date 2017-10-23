@@ -3,8 +3,8 @@
 $packageName= 'metricbeat'
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-5.6.2-windows-x86.zip'
-$url64      = 'https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-5.6.2-windows-x86_64.zip'
+$url        = 'https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-5.6.3-windows-x86.zip'
+$url64      = 'https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-5.6.3-windows-x86_64.zip'
 
 $installationPath = $toolsDir
 
@@ -13,9 +13,9 @@ $packageArgs = @{
   unzipLocation = $installationPath
   url           = $url
   url64bit      = $url64
-  checksum      = '01cee9e58fbe7467be0ab4fcbd79e915d9ecdf55ce52ce78ab285e09cea0eaf941676167094312ddf2b1f012178f912f52b70ca9e26b6dfa6fb04b321d765bf6'
+  checksum      = 'a1eedfe77dd0fac1596a893b6e682be00c5a25f3e1dd13ea1d1e1fa40448fd586dcf9dc329afc55b3e2b9c4bdfafd60c2587ebf1244b3bda58836e66d1ae05ce'
   checksumType  = 'sha512'
-  checksum64    = '7d5bdbc916411a48ab6db265ff56f84fafe983bab4037966ba7a5693334caae8e0fd168d744f31ec5fa3dfc261d062ce52b61e50e297e52874214d3d9e227e7b'
+  checksum64    = '06c28cefee9e3ad5c823637c9f99b2109e58ccf9c3dc4ec61392d6c0a6cf6588b0497117e74016e83fcd046eda39cbb41249d6e8bf7c269d979f695c37080c82'
   checksumType64= 'sha512'
 }
 
