@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>metricbeat</id>
-    <version>5.6.4</version> 
+    <version>6.1.1</version> 
     <packageSourceUrl>https://github.com/palethorper/chocolatey-packages/tree/master/automatic/metricbeat</packageSourceUrl>
     <owners>palethorper</owners>
     <title>metricbeat</title>
@@ -13,8 +13,8 @@
     <!-- If there is a license Url available, it is is required for the community feed -->
     <licenseUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/53430a5c/automatic/metricbeat/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/elastic/beats/tree/5.6/metricbeat</projectSourceUrl>
-    <docsUrl>https://www.elastic.co/guide/en/beats/metricbeat/5.6/index.html</docsUrl>
+    <projectSourceUrl>https://github.com/elastic/beats/tree/6.1/metricbeat</projectSourceUrl>
+    <docsUrl>https://www.elastic.co/guide/en/beats/metricbeat/6.1/index.html</docsUrl>
     <tags>metricbeat beat elastic admin</tags>
     <summary>Metricbeat helps you monitor your servers and the services they host by collecting metrics from the operating system and services.</summary>
     <description>
