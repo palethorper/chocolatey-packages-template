@@ -40,11 +40,15 @@ function global:au_GetLatest {
     $checksum32Type = $Matches[1]
     $checkSum32 = (Invoke-WebRequest ($x) -UseBasicParsing -DisableKeepAlive)
     $checkSum32 = [System.Text.Encoding]::Default.GetString($checkSum32.Content)
+    ($checkSum32 | Out-String) -imatch "^\S+"
+    $checkSum32 = $Matches[0]
 
     $x = ($links | ? { $_.href -imatch "x86_64.zip" -and $_.href -match "zip\.(\w+)$" }).href
     $checksum64Type = $Matches[1]
     $checkSum64 = (Invoke-WebRequest ($x) -UseBasicParsing -DisableKeepAlive)
     $checkSum64 = [System.Text.Encoding]::Default.GetString($checkSum64.Content)
+    $checkSum64 = ($checkSum64 | Out-String) -imatch "^\S+"
+    $checkSum64 = $Matches[0]
 
     $Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version; Checksum32 = $checkSum32; Checksum32Type = $checksum32Type; Checksum64 = $checkSum64; Checksum64Type = $checksum64Type; }
     return $Latest
