@@ -3,8 +3,8 @@
 $packageName= 'winlogbeat'
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-5.6.4-windows-x86.zip'
-$url64      = 'https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-5.6.4-windows-x86_64.zip'
+$url        = 'https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-6.1.1-windows-x86.zip'
+$url64      = 'https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-6.1.1-windows-x86_64.zip'
 
 $installationPath = $toolsDir
 
@@ -13,9 +13,9 @@ $packageArgs = @{
   unzipLocation = $installationPath
   url           = $url
   url64bit      = $url64
-  checksum      = '4aa061bdd355ed689f48b010841d5f631d30f729d3b0cf2207850dbbe784a94e569407ab4e67bc685227e6cc4b92130330d3bfd3a5489d6c863a8c003369501b'
+  checksum      = '421cc5b253215315435cc4013afba8876f96aaa9fefcab6afad9b67aaeabea745d7431a642e8622e75b9d7fd7e64929678c0ab03209d8e18cebe295d1bd769eb'
   checksumType  = 'sha512'
-  checksum64    = '3d1057e398a02ba603f5fb6c9c2b1638a82840752fe55147baa5ae605c1008818d1bb8a3640e6dd3958b28e332af6b49ded56c0af546b93af1c6284f9b1de98f'
+  checksum64    = '3a3c541a2e8ab3e4f3c981eaf2a7108fc206d5c6b509914527ed821408ec50792890d22908ba7e86cef6ee46baaddc9e1ff62eed0d6d40f6ba75f9805d4ff798'
   checksumType64= 'sha512'
 }
 
