@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>packetbeat</id>
-    <version>6.1.1</version> 
+    <version>6.1.2</version> 
     <packageSourceUrl>https://github.com/palethorper/chocolatey-packages/tree/master/automatic/packetbeat</packageSourceUrl>
     <owners>palethorper</owners>
     <title>packetbeat</title>
@@ -17,9 +17,8 @@
     <docsUrl>https://www.elastic.co/guide/en/beats/packetbeat/6.1/index.html</docsUrl>
     <tags>packetbeat beat elastic admin</tags>
     <summary>Packetbeat is an open source shipper for real-time network packet analyzer</summary>
-    <description>
-Packetbeat is a real-time network packet analyzer that you can use with Elasticsearch to provide an application monitoring and performance analytics system. Packetbeat completes the Beats platform by providing visibility between the servers of your network.
-</description>
+    <description><![CDATA[Contains the chocolatey package for packetbeat
+]]></description>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>

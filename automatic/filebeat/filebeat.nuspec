@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>filebeat</id>
-    <version>6.1.1.20180115</version> 
+    <version>6.1.2</version> 
     <packageSourceUrl>https://github.com/palethorper/chocolatey-packages/tree/master/automatic/filebeat</packageSourceUrl>
     <owners>palethorper</owners>
     <title>filebeat</title>
@@ -17,9 +17,8 @@
     <docsUrl>https://www.elastic.co/guide/en/beats/filebeat/6.1/index.html</docsUrl>
     <tags>filebeat beat elastic admin</tags>
     <summary>Filebeat is a lightweight, open source shipper for log file data.</summary>
-    <description>
-Filebeat is a lightweight, open source shipper for log file data. As the next-generation Logstash Forwarder, Filebeat tails logs and quickly sends this information to Logstash for further parsing and enrichment or to Elasticsearch for centralized storage and analysis.
-</description>
+    <description><![CDATA[Contains the chocolatey package for filebeat
+]]></description>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>
