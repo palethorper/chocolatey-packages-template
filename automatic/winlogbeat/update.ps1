@@ -27,7 +27,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $url -UseBasicParsing -DisableKeepAlive
 
-    $reVersion  = ">(\d+.\d+.\d+)<"
+    $reVersion  = ">\s*(\d+.\d+.\d+)\s*<"
     $download_page.Content -imatch $reVersion
     $version = $Matches[1]
 
