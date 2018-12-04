@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>auditbeat</id>
+    <version>6.5.0</version> 
+    <packageSourceUrl>https://github.com/palethorper/chocolatey-packages/tree/master/automatic/auditbeat</packageSourceUrl>
+    <owners>palethorper</owners>
+    <title>auditbeat</title>
+    <authors>Robert Palethorpe, William Tsoi</authors>
+    <projectUrl>https://www.elastic.co/downloads/beats/auditbeat</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/f264aca5/automatic/auditbeat/icons/auditbeat.png</iconUrl>
+    <copyright></copyright>
+    <!-- If there is a license Url available, it is is required for the community feed -->
+    <licenseUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/f264aca5/automatic/auditbeat/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/elastic/beats/tree/6.5/auditbeat</projectSourceUrl>
+    <docsUrl>https://www.elastic.co/guide/en/beats/auditbeat/6.5/index.html</docsUrl>
+    <tags>auditbeat beat elastic admin</tags>
+    <summary>auditbeat is a lightweight, open source shipper for log file data.</summary>
+    <description><![CDATA[Contains the chocolatey package for auditbeat
+]]></description>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

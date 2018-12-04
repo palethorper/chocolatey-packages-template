@@ -8,10 +8,10 @@
     <title>packetbeat</title>
     <authors>Robert Palethorpe</authors>
     <projectUrl>https://www.elastic.co/downloads/beats/packetbeat</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/624898d9/automatic/packetbeat/icons/packetbeat.png</iconUrl>
+    <iconUrl>https://github.com/palethorper/chocolatey-packages/tree/master/automatic/packetbeat/icons/packetbeat.png</iconUrl>
     <copyright></copyright>
     <!-- If there is a license Url available, it is is required for the community feed -->
-    <licenseUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/624898d9/automatic/packetbeat/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/palethorper/chocolatey-packages/tree/master/automatic/packetbeat/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/elastic/beats/tree/6.5/packetbeat</projectSourceUrl>
     <docsUrl>https://www.elastic.co/guide/en/beats/packetbeat/6.5/index.html</docsUrl>
