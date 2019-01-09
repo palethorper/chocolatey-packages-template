@@ -6,9 +6,9 @@
     <packageSourceUrl>https://github.com/palethorper/chocolatey-packages/tree/master/automatic/auditbeat</packageSourceUrl>
     <owners>palethorper</owners>
     <title>auditbeat</title>
-    <authors>Robert Palethorpe, William Tsoi</authors>
+    <authors>Robert Palethorpe</authors>
     <projectUrl>https://www.elastic.co/downloads/beats/auditbeat</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/f264aca5/automatic/auditbeat/icons/auditbeat.png</iconUrl>
+    <iconUrl>https://github.com/palethorper/chocolatey-packages/raw/master/automatic/auditbeat/icons/auditbeat.png</iconUrl>
     <copyright></copyright>
     <!-- If there is a license Url available, it is is required for the community feed -->
     <licenseUrl>https://github.com/elastic/beats/blob/6.5/licenses/ELASTIC-LICENSE.txt</licenseUrl>
