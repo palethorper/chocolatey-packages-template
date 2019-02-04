@@ -8,22 +8,22 @@ $url64      = 'https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-
 
 $installationPath = $toolsDir
 
-# Chocolatey seems to copy the old lib folder in case of upgrade. Uninstall first.
-$zipContentGlob=dir "$($installationPath)/.." "auditbeat-*.zip.txt"
-$zipContentFile=$zipContentGlob.Name
-$folder = ($zipContentFile -replace ".zip.txt","") + "\\"
-if (($zipContentGlob -ne $null)) {
-    $zipContentFile
-    $zipContents=(get-content $zipContentGlob.FullName) -split [environment]::NewLine
-    for ($i = $zipContents.Length; $i -gt 0; $i--) {
-        $fileInZip = $zipContents[$i]
-        if ($fileInZip -ne $null -and $fileInZip.Trim() -ne '') {
-            $fileToRemove = $fileInZip -replace $folder,""
-            Remove-Item -Path "$fileToRemove" -ErrorAction SilentlyContinue -Recurse -Force
-        }
-    }
-    Remove-Item -Path $zipContentGlob.FullName -ErrorAction SilentlyContinue -Recurse -Force
-}
+# # Chocolatey seems to copy the old lib folder in case of upgrade. Uninstall first.
+# $zipContentGlob=dir "$($installationPath)/.." "auditbeat-*.zip.txt"
+# $zipContentFile=$zipContentGlob.Name
+# $folder = ($zipContentFile -replace ".zip.txt","") + "\\"
+# if (($zipContentGlob -ne $null)) {
+#     $zipContentFile
+#     $zipContents=(get-content $zipContentGlob.FullName) -split [environment]::NewLine
+#     for ($i = $zipContents.Length; $i -gt 0; $i--) {
+#         $fileInZip = $zipContents[$i]
+#         if ($fileInZip -ne $null -and $fileInZip.Trim() -ne '') {
+#             $fileToRemove = $fileInZip -replace $folder,""
+#             Remove-Item -Path "$fileToRemove" -ErrorAction SilentlyContinue -Recurse -Force
+#         }
+#     }
+#     Remove-Item -Path $zipContentGlob.FullName -ErrorAction SilentlyContinue -Recurse -Force
+# }
 
 $folder = if(Get-ProcessorBits 64) { [io.path]::GetFileNameWithoutExtension($url64) } else { [io.path]::GetFileNameWithoutExtension($url) }
 

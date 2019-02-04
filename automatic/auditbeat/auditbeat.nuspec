@@ -7,19 +7,20 @@
     <owners>palethorper</owners>
     <title>auditbeat</title>
     <authors>Robert Palethorpe</authors>
-    <projectUrl>https://www.elastic.co/downloads/beats/auditbeat</projectUrl>
-    <iconUrl>https://github.com/palethorper/chocolatey-packages/raw/master/automatic/auditbeat/icons/auditbeat.png</iconUrl>
-    <copyright></copyright>
-    <!-- If there is a license Url available, it is is required for the community feed -->
+    <projectUrl>https://www.elastic.co/products/beats/auditbeat</projectUrl>
+    <iconUrl>https://palethorper.github.io/chocolatey-packages/icons/auditbeat/auditbeat.png</iconUrl>
+    <copyright>Copyright 2014-2019 Elasticsearch BV</copyright>
     <licenseUrl>https://github.com/elastic/beats/blob/6.5/licenses/ELASTIC-LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/elastic/beats/tree/6.6/auditbeat</projectSourceUrl>
     <docsUrl>https://www.elastic.co/guide/en/beats/auditbeat/6.6/index.html</docsUrl>
     <tags>auditbeat beat elastic admin</tags>
     <summary>auditbeat is a lightweight, open source shipper for log file data.</summary>
-    <description><![CDATA[Contains the chocolatey package for auditbeat
+    <description><![CDATA[# Lightweight Shipper for Audit Data
+
+Collect your Linux audit framework data and monitor the integrity of your files. Auditbeat ships these events in real time to the rest of the Elastic Stack for further analysis.
+
 ]]></description>
-    <releaseNotes></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

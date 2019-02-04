@@ -1,6 +1,7 @@
 import-module au
 
 $url = 'https://www.elastic.co/downloads/beats/auditbeat'
+# $url = 'https://www.elastic.co/downloads/past-releases/auditbeat-6-6-0'
 $packageName = 'auditbeat'
 
 function global:au_SearchReplace {
@@ -27,7 +28,8 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = invoke-webrequest $url -UseBasicParsing -DisableKeepAlive
 
-    $reVersion  = ">\s*(\d+.\d+.\d+)\s*<"
+    $reVersion  = "\s*(\d+\.\d+\.\d+)\s*<\/div>"
+    # $reVersion  = "\s*(\d+\.\d+\.\d+)\s*" # debug
     $download_page.Content -imatch $reVersion
     $version = $Matches[1]
 
