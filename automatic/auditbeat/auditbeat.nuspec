@@ -8,7 +8,7 @@
     <title>auditbeat</title>
     <authors>Robert Palethorpe</authors>
     <projectUrl>https://www.elastic.co/products/beats/auditbeat</projectUrl>
-    <iconUrl>https://palethorper.github.io/chocolatey-packages/icons/auditbeat/auditbeat.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/palethorper/chocolatey-packages/automatic/auditbeat/icons/auditbeat.png</iconUrl>
     <copyright>Copyright 2014-2019 Elasticsearch BV</copyright>
     <licenseUrl>https://github.com/elastic/beats/blob/6.5/licenses/ELASTIC-LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

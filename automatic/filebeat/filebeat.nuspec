@@ -8,7 +8,7 @@
     <title>filebeat</title>
     <authors>Robert Palethorpe, William Tsoi</authors>
     <projectUrl>https://www.elastic.co/downloads/beats/filebeat</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/f264aca5/automatic/filebeat/icons/filebeat.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/palethorper/chocolatey-packages/automatic/filebeat/icons/filebeat.png</iconUrl>
     <copyright></copyright>
     <!-- If there is a license Url available, it is is required for the community feed -->
     <licenseUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/f264aca5/automatic/filebeat/LICENSE</licenseUrl>
