@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>auditbeat</id>
-    <version>6.6.0</version> 
+    <version>6.6.1</version> 
     <packageSourceUrl>https://github.com/palethorper/chocolatey-packages/tree/master/automatic/auditbeat</packageSourceUrl>
     <owners>palethorper</owners>
     <title>auditbeat</title>
@@ -16,10 +16,7 @@
     <docsUrl>https://www.elastic.co/guide/en/beats/auditbeat/6.6/index.html</docsUrl>
     <tags>auditbeat beat elastic admin</tags>
     <summary>auditbeat is a lightweight, open source shipper for log file data.</summary>
-    <description><![CDATA[# Lightweight Shipper for Audit Data
-
-Collect your Linux audit framework data and monitor the integrity of your files. Auditbeat ships these events in real time to the rest of the Elastic Stack for further analysis.
-
+    <description><![CDATA[Contains the chocolatey package for auditbeat
 ]]></description>
   </metadata>
   <files>
