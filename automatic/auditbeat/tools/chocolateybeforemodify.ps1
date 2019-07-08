@@ -7,6 +7,9 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $installationPath = $toolsDir
 
+$uninstallScript = Join-Path $toolsDir "uninstall-service-winlogbeat.ps1"
+Invoke-Expression $uninstallScript
+
 # Chocolatey seems to copy the old lib folder in case of upgrade. Uninstall first.
 $zipContentGlob=Get-ChildItem "$($installationPath)/.." "$($packageName)-*.zip.txt"
 $zipContentFile=$zipContentGlob.Name
