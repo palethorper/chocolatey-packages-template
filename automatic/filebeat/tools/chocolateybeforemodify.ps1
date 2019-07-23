@@ -1,4 +1,4 @@
-$packageName = 'auditbeat'
+$packageName = 'filebeat'
 
 Stop-Service $packageName
 Start-Sleep -s 3
