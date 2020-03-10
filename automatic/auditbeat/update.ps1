@@ -28,7 +28,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = invoke-webrequest $url -UseBasicParsing -DisableKeepAlive
 
-    $reVersion  = "\s*(\d+\.\d+\.\d+)\s*<\/div>"
+    $reVersion = "\s*(\d+\.\d+\.\d+)\s*<\/div>"
     # $reVersion  = "\s*(\d+\.\d+\.\d+)\s*" # debug
     $download_page.Content -imatch $reVersion
     $version = $Matches[1]
@@ -37,6 +37,10 @@ function global:au_GetLatest {
 
     $url32 = ($links | ? { $_.href -imatch "x86.zip$" }).href
     $url64 = ($links | ? { $_.href -imatch "x86_64.zip$" }).href
+
+    $reVersion  = "-(\d+.\d+.\d+)-"
+    $download_page.Content -imatch $reVersion
+    $version = $Matches[1]
 
     $x = ($links | ? { $_.href -imatch "x86.zip.sha" -and $_.href -match "zip\.(\w+)$" }).href | select -first 1
     $checksum32Type = $Matches[1]
