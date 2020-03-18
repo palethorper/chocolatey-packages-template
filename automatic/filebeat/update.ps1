@@ -1,6 +1,8 @@
 import-module au
 
-$url = 'https://www.elastic.co/downloads/beats/filebeat'
+# $url = 'https://www.elastic.co/downloads/beats/filebeat'
+$url = 'https://www.elastic.co/downloads/past-releases/filebeat-6-8-7'
+
 $packageName = 'filebeat'
 
 function global:au_SearchReplace {
@@ -33,7 +35,7 @@ function global:au_GetLatest {
     $url64 = ($links | ? { $_.href -imatch "x86_64.zip$" }).href
 
     $reVersion  = "-(\d+.\d+.\d+)-"
-    $download_page.Content -imatch $reVersion
+    $url32 -imatch $reVersion
     $version = $Matches[1]
 
     $x = ($links | ? { $_.href -imatch "x86.zip.sha" -and $_.href -match "zip\.(\w+)$" }).href | select -first 1

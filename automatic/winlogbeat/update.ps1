@@ -1,7 +1,7 @@
 import-module au
 
-$url = 'https://www.elastic.co/downloads/beats/winlogbeat'
-# $url = 'https://www.elastic.co/downloads/past-releases/winlogbeat-6-8-7'
+# $url = 'https://www.elastic.co/downloads/beats/winlogbeat'
+$url = 'https://www.elastic.co/downloads/past-releases/winlogbeat-6-8-7'
 $packageName = 'winlogbeat'
 
 function global:au_SearchReplace {

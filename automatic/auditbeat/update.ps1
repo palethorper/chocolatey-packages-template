@@ -1,7 +1,7 @@
 import-module au
 
-$url = 'https://www.elastic.co/downloads/beats/auditbeat'
-# $url = 'https://www.elastic.co/downloads/past-releases/auditbeat-6-6-0'
+# $url = 'https://www.elastic.co/downloads/beats/auditbeat'
+$url = 'https://www.elastic.co/downloads/past-releases/auditbeat-6-8-7'
 $packageName = 'auditbeat'
 
 function global:au_SearchReplace {
@@ -28,18 +28,13 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = invoke-webrequest $url -UseBasicParsing -DisableKeepAlive
 
-    $reVersion = "\s*(\d+\.\d+\.\d+)\s*<\/div>"
-    # $reVersion  = "\s*(\d+\.\d+\.\d+)\s*" # debug
-    $download_page.Content -imatch $reVersion
-    $version = $Matches[1]
-
     $links = $download_page.Links | ? { $_.href -imatch "zip" -and $_.href -notmatch "alpha|beta|-rc\d-" }
 
     $url32 = ($links | ? { $_.href -imatch "x86.zip$" }).href
     $url64 = ($links | ? { $_.href -imatch "x86_64.zip$" }).href
 
     $reVersion  = "-(\d+.\d+.\d+)-"
-    $download_page.Content -imatch $reVersion
+    $url32 -imatch $reVersion
     $version = $Matches[1]
 
     $x = ($links | ? { $_.href -imatch "x86.zip.sha" -and $_.href -match "zip\.(\w+)$" }).href | select -first 1

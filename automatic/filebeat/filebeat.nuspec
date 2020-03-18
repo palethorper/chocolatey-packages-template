@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>filebeat</id>
-    <version>7.6.1</version> 
+    <version>6.8.7</version> 
     <packageSourceUrl>https://github.com/palethorper/chocolatey-packages/tree/master/automatic/filebeat</packageSourceUrl>
     <owners>palethorper</owners>
     <title>filebeat</title>
@@ -13,8 +13,8 @@
     <!-- If there is a license Url available, it is is required for the community feed -->
     <licenseUrl>https://cdn.rawgit.com/palethorper/chocolatey-packages/f264aca5/automatic/filebeat/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/elastic/beats/tree/7.6/filebeat</projectSourceUrl>
-    <docsUrl>https://www.elastic.co/guide/en/beats/filebeat/7.6/index.html</docsUrl>
+    <projectSourceUrl>https://github.com/elastic/beats/tree/6.8/filebeat</projectSourceUrl>
+    <docsUrl>https://www.elastic.co/guide/en/beats/filebeat/6.8/index.html</docsUrl>
     <tags>filebeat beat elastic admin</tags>
     <summary>Filebeat is a lightweight, open source shipper for log file data.</summary>
     <description><![CDATA[Contains the chocolatey package for filebeat
