@@ -32,7 +32,7 @@ function global:au_GetLatest {
     $url32 = ($links | ? { $_.href -imatch "x86.zip$" }).href
     $url64 = ($links | ? { $_.href -imatch "x86_64.zip$" }).href
 
-    $reVersion  = "-(\d+.\d+.\d+)-"
+    $reVersion  = "-(\d+\.\d+\.\d+)-"
     $download_page.Content -imatch $reVersion
     $version = $Matches[1]
 
