@@ -3,8 +3,8 @@
 $packageName= 'auditbeat'
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-7.9.1-windows-x86.zip'
-$url64      = 'https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-7.9.1-windows-x86_64.zip'
+$url        = 'https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-7.9.2-windows-x86.zip'
+$url64      = 'https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-7.9.2-windows-x86_64.zip'
 
 $installationPath = $toolsDir
 
@@ -15,9 +15,9 @@ $packageArgs = @{
   unzipLocation = $installationPath
   url           = $url
   url64bit      = $url64
-  checksum      = '0f55c624a0d51c4b20c294743337c13f940e752797e60c79262a93440450a002ff074fa12f28c1edce3c7dc5d522f71504f418a7c454f0943491841d4c790ec9'
+  checksum      = '0b522feaebb2f8b0274f8bc9f6786d937bc383a465b8b77667a4465bb4633d995fb1dc50f6ae632f296f1a30e7eb53474a960c4ed94d710da6bebe0c351443c9'
   checksumType  = 'sha512'
-  checksum64    = '649a7e9f8f6fdacb43658fb633a58e530b06792de8e3adaa5fe4d6d3f0a5a134621e62537389f55be85234e20a375c3305430e15038f7512423226c3d06c6dcc'
+  checksum64    = 'de9e424b792d7d82532cbefaf00a10ecf2d6ec98d610578ed7c8b7ea05119e41184fba713390a318cdc70f04a9cd703d948d37825e0e29806ba9d139fa78da04'
   checksumType64= 'sha512'
   specificFolder = $folder
 }

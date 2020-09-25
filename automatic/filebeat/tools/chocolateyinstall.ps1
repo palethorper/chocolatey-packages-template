@@ -3,8 +3,8 @@
 $packageName= 'filebeat'
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.9.1-windows-x86.zip'
-$url64      = 'https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.9.1-windows-x86_64.zip'
+$url        = 'https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.9.2-windows-x86.zip'
+$url64      = 'https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.9.2-windows-x86_64.zip'
 
 $installationPath = $toolsDir
 
@@ -15,9 +15,9 @@ $packageArgs = @{
   unzipLocation = $installationPath
   url           = $url
   url64bit      = $url64
-  checksum      = '7b0568c82614f10de4e7ccb1b284cf7ff2dbb1d02dd440be7f7bd526b28e3772fa8b7b6f51a73fb3c95ba987b8eeeb5738287dabfd857941f8690aa8ef5f0219'
+  checksum      = '5fe97b44f1d60f923cf0ddbe0bee9dd8aaaf206411b0813abd680b54afde5e310d7f5d7aaa7195fc45ed015e7c37318ee2b5b066c4190f5b2d979ed2092f2707'
   checksumType  = 'sha512'
-  checksum64    = '1e746954c27c7b7407f852f796560899b87f43111accc638509d4ec34a9a1c8e7a1dfec2dd0737d01871fc64b07ee159365ee420d91c8ed4ad63411ddb783702'
+  checksum64    = '5dce2aa56aa0aa3197901b7cf2a1484c14ea6c819db88aa0ea2a8c5e57f38b2b7291a75dd9885e72e7325f1138a0c3d0925fe2a7700527846875910d47592ec9'
   checksumType64= 'sha512'
   specificFolder = $folder
 }
