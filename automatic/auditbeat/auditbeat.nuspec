@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>auditbeat</id>
-    <version>7.10.0</version> 
+    <version>7.10.1</version> 
     <packageSourceUrl>https://github.com/palethorper/chocolatey-packages/tree/master/automatic/auditbeat</packageSourceUrl>
     <owners>palethorper</owners>
     <title>auditbeat</title>
