@@ -3,8 +3,8 @@
 $packageName= 'packetbeat'
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://artifacts.elastic.co/downloads/beats/packetbeat/packetbeat-7.11.2-windows-x86.zip'
-$url64      = 'https://artifacts.elastic.co/downloads/beats/packetbeat/packetbeat-7.11.2-windows-x86_64.zip'
+$url        = 'https://artifacts.elastic.co/downloads/beats/packetbeat/packetbeat-7.12.0-windows-x86.zip'
+$url64      = 'https://artifacts.elastic.co/downloads/beats/packetbeat/packetbeat-7.12.0-windows-x86_64.zip'
 
 $installationPath = $toolsDir
 
@@ -15,9 +15,9 @@ $packageArgs = @{
   unzipLocation = $installationPath
   url           = $url
   url64bit      = $url64
-  checksum      = '1aa39ec31d46fceb3d39a83e43dd0f1ec6bea5b791edc6ad4377f62560bdeaef00176f717124b37c0270cf77e0cdf7a9e854a2c56db246609d0f9919415cfcc7'
+  checksum      = '8fc55ed4e839e8136d20c112c0249f2c1cc1df60b23d87f2ec55bb03065ed5c412ae9ecda03291bc796b411988f8983849aec81a8af36de3a987f9ea5b927868'
   checksumType  = 'sha512'
-  checksum64    = '0f9e29849af4739267951dcdf04030c48ae13a1f754e9abe97d595505d917fbc35104456130cb5dc14dd1040cfdc8f9c7cf58f704ebb800042f348ce19c35dd7'
+  checksum64    = '3055d9b8671895c1546ead2a49cd641a36cc8c292be3f61b0ecb1a79c34eb9defc0f971c5973121ca2c03f97de241ded5c382e53557477aff1850f5437818f46'
   checksumType64= 'sha512'
   specificFolder = $folder
 }
