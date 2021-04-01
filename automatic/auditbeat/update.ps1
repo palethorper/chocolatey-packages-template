@@ -28,10 +28,9 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = invoke-webrequest $url -UseBasicParsing -DisableKeepAlive
 
-    $reVersion = "\s*(\d+\.\d+\.\d+)\s*<\/div>"
-    # $reVersion  = "\s*(\d+\.\d+\.\d+)\s*" # debug
+    $reVersion  = ">($packagename)*\s*(?<ver>\d+.\d+.\d+)\s*<"
     $download_page.Content -imatch $reVersion
-    $version = $Matches[1]
+    $version = $Matches["ver"]
 
     $links = $download_page.Links | ? { $_.href -imatch "zip" -and $_.href -notmatch "alpha|beta|-rc\d-" }
 

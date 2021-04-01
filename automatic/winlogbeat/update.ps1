@@ -33,9 +33,9 @@ function global:au_GetLatest {
     $url32 = ($links | ? { $_.href -imatch "x86.zip$" }).href
     $url64 = ($links | ? { $_.href -imatch "x86_64.zip$" }).href
 
-    $reVersion  = "-(\d+.\d+.\d+)-"
-    $url32 -imatch $reVersion
-    $version = $Matches[1]
+    $reVersion  = ">($packagename)*\s*(?<ver>\d+.\d+.\d+)\s*<"
+    $download_page.Content -imatch $reVersion
+    $version = $Matches["ver"]
 
     $x = ($links | ? { $_.href -imatch "x86.zip.sha" -and $_.href -match "zip\.(\w+)$" }).href | select -first 1
     $checksum32Type = $Matches[1]
