@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>auditbeat</id>
-    <version>7.12.1</version> 
+    <version>7.13.0</version> 
     <packageSourceUrl>https://github.com/palethorper/chocolatey-packages/tree/master/automatic/auditbeat</packageSourceUrl>
     <owners>palethorper</owners>
     <title>auditbeat</title>
@@ -12,8 +12,8 @@
     <copyright>Copyright 2014-2019 Elasticsearch BV</copyright>
     <licenseUrl>https://github.com/elastic/beats/blob/6.5/licenses/ELASTIC-LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/elastic/beats/tree/7.12/auditbeat</projectSourceUrl>
-    <docsUrl>https://www.elastic.co/guide/en/beats/auditbeat/7.12/index.html</docsUrl>
+    <projectSourceUrl>https://github.com/elastic/beats/tree/7.13/auditbeat</projectSourceUrl>
+    <docsUrl>https://www.elastic.co/guide/en/beats/auditbeat/7.13/index.html</docsUrl>
     <tags>auditbeat beat elastic admin</tags>
     <summary>auditbeat is a lightweight, open source shipper for log file data.</summary>
     <description><![CDATA[Contains the chocolatey package for auditbeat
