@@ -1,6 +1,6 @@
 import-module au
 
-$url = 'https://www.elastic.co/downloads/past-releases/filebeat'
+$url = 'https://www.elastic.co/downloads/beats/filebeat'
 $packageName = 'filebeat'
 
 function global:au_SearchReplace {
